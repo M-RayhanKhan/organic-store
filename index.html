@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Conceptual Session</title>
+  <title>Organic store</title>
   <!-- google font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +15,9 @@
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- font Awesome CDN -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="tailwind.config.js">
   <!-- tailwind.config -->
   <script>
@@ -24,10 +26,15 @@
         extend: {
           colors: {
             clifford: '#da373d',
-            tColor: '#98C104'
+            tColor: '#98C104',
+            body: 'rgb(248, 246, 243)'
           },
           fontFamily: {
             poppins: "Poppins"
+          },
+          backgroundImage: {
+            bannerImg: "url('./images/leaf01.png')",
+            callImg: "url('./images/call.jpg')"
           }
         }
       }
@@ -36,11 +43,11 @@
 </head>
 
 <body class="font-poppins">
-  <header class="lg:w-[90%] mx-auto">
+  <header class="lg:w-11/12 mx-auto">
     <!-- navbar -->
     <div class="navbar p-0 bg-base-100">
       <div class="navbar-start">
-       
+
         <a class="btn btn-ghost text-xl"><img class="w-24" src="./images/logo.svg" alt=""></a>
       </div>
       <div class="navbar-center hidden lg:flex">
@@ -53,11 +60,11 @@
         </ul>
       </div>
       <div class="navbar-end">
-       <div class="flex items-center gap-3">
-        <p class="text-tColor font-semibold text-lg">$10.00</p>
-        <i class="fa-solid fa-cart-shopping text-[18px] text-tColor"></i>
-        <i class="fa-regular fa-user text-[18px]"></i>
-       </div>
+        <div class="flex items-center gap-3">
+          <p class="text-tColor font-semibold text-lg">$10.00</p>
+          <i class="fa-solid fa-cart-shopping text-[18px] text-tColor"></i>
+          <i class="fa-regular fa-user text-[18px]"></i>
+        </div>
         <!-- dropdown part mobile device -->
         <div class="dropdown">
           <div tabindex="0" role="button" class="ml-3 px-2 rounded-lg py-2 lg:hidden bg-[#69b809]">
@@ -66,7 +73,8 @@
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
             </svg>
           </div>
-          <ul tabindex="0" class="top-8 right-0 space-y-2 font-bold menu-sm dropdown-content bg-slate-200 rounded-box z-[1] mt-3 w-32 p-2 shadow">
+          <ul tabindex="0"
+            class="top-8 right-0 space-y-2 font-bold menu-sm dropdown-content bg-slate-200 rounded-box z-[1] mt-3 w-32 p-2 shadow">
             <li><a class="hover:text-tColor transition duration-700">Home</a></li>
             <li><a class="hover:text-tColor transition duration-700">Everything</a></li>
             <li><a class="hover:text-tColor transition duration-700">Groceries</a></li>
@@ -76,7 +84,262 @@
         </div>
       </div>
     </div>
+    <!-- banner -->
+    <section class=" bg-bannerImg bg-no-repeat bg-right-bottom">
+      <div class="w-full h-full bg-body bg-opacity-90">
+      <div class="lg:w-9/12 px-4 lg:px-0 mx-auto flex flex-col sm:flex-row items-center gap-10 py-5 lg:py-24">
+        <div class="flex-1">
+          <img class="" src="./images/bannerbg.png" alt="">
+        </div>
+          <div class=" flex-1 pb-8 sm:pb-0 text-center sm:text-start space-y-4">
+            <h6 class="text-lg font-bold">Best Quality Products</h6>
+            <h1 class="lg:text-6xl text-3xl font-bold">Join The Organic Movement!</h1>
+            <p class="text-[#7d7d7c] font-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+              tellus,
+              luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+            <button class="bg-[#659407]  text-white py-3 font-semibold px-6 rounded-lg">
+              <i class="fa-solid fa-cart-shopping mr-2 text-white"></i>
+              Shop Now
+            </button>
+          </div>
+      </div>
+      </div>
+    </section>
+  
   </header>
+  <main>
+    <!-- box section -->
+     <section class="w-full mb-10 py-10 md:py-0 flex justify-center items-center text-center bg-callImg blur-0 md:h-[450px] bg-cover bg-center bg-[#201d1d77] bg-blend-overlay opacity-95">
+      <div class="space-y-5 ">
+        <h3 class="text-5xl text-white font-bold ">Insert A call to action</h3>
+        <p class="text-white font-medium md:px-40 lg:w-[60%] px-16 lg:px-0 mx-auto text-[17px]">think of what you want your visitors to do next maybe they should contact you?
+        </p>
+        <button class="btn btn-outline hover:border-none hover:bg-[#526b1c] translate-x-0 duration-1000 border-white text-white">Get In Touch</button>
+      </div>
+     </section>
+     <!-- Best Selling Product section -->
+      <section class="w-11/12 mx-auto mb-10">
+        <!-- card items -->
+         <div class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4" >
+          <!-- card 1 -->
+          <div class="card border bg-base-100 w-full shadow-xl">
+            <figure class="p-5">
+              <img class="w-full rounded-lg"
+                src="./images/product01.jpg"
+                alt="Shoes"
+                class="rounded-xl" />
+            </figure>
+            <div class=" items-center text-center space-y-2 pb-3">
+              <p class="text-lg text-gray-500">Groceries</p>
+              <h2 class="font-bold text-xl text-center">Assorted Coffee</h2>
+              <div>
+                <i class="fa-solid fa-star text-amber-500"></i>
+                <i class="fa-solid fa-star text-amber-500"></i>
+                <i class="fa-solid fa-star text-amber-500"></i>
+                <i class="fa-solid fa-star text-amber-500"></i>
+                <i class="fa-solid fa-star text-amber-500"></i>
+              </div>
+              <p class=" text-gray-600">$35.00</p>
+              <div class="card-actions flex justify-center">
+                <button class="bg-[#659407]  text-white py-3 font-semibold px-6 rounded-lg">
+                  Shop Now
+                  <i class="fa-solid fa-cart-shopping mr-2 text-white"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- card 2 -->
+          <div class="card border bg-base-100 w-full shadow-xl">
+            <figure class="p-5">
+              <img class="w-full rounded-lg"
+                src="./images/product02.jpg"
+                alt="Shoes"
+                class="rounded-xl" />
+            </figure>
+            <div class=" items-center text-center space-y-2 pb-3">
+              <p class="text-lg text-gray-500">Groceries</p>
+              <h2 class="font-bold text-xl text-center">Assorted Coffee</h2>
+              <div>
+                <i class="fa-solid fa-star text-amber-500"></i>
+                <i class="fa-solid fa-star text-amber-500"></i>
+                <i class="fa-solid fa-star text-amber-500"></i>
+                <i class="fa-solid fa-star text-amber-500"></i>
+                <i class="fa-solid fa-star text-amber-500"></i>
+              </div>
+              <p class=" text-gray-600">$35.00</p>
+              <div class="card-actions flex justify-center">
+                <button class="bg-[#659407]  text-white py-3 font-semibold px-6 rounded-lg">
+                  Shop Now
+                  <i class="fa-solid fa-cart-shopping mr-2 text-white"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- card 3 -->
+          <div class="card border bg-base-100 w-full shadow-xl">
+            <figure class="p-5">
+              <img class="w-full rounded-lg"
+                src="./images/product03.jpg"
+                alt="Shoes"
+                class="rounded-xl" />
+            </figure>
+            <div class=" items-center text-center space-y-2 pb-3">
+              <p class="text-lg text-gray-500">Groceries</p>
+              <h2 class="font-bold text-xl text-center">Assorted Coffee</h2>
+              <div>
+                <i class="fa-solid fa-star text-amber-500"></i>
+                <i class="fa-solid fa-star text-amber-500"></i>
+                <i class="fa-solid fa-star text-amber-500"></i>
+                <i class="fa-solid fa-star text-amber-500"></i>
+                <i class="fa-solid fa-star text-amber-500"></i>
+              </div>
+              <p class=" text-gray-600">$35.00</p>
+              <div class="card-actions flex justify-center">
+                <button class="bg-[#659407]  text-white py-3 font-semibold px-6 rounded-lg">
+                  Shop Now
+                  <i class="fa-solid fa-cart-shopping mr-2 text-white"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- card 4 -->
+          <div class="card border bg-base-100 w-full shadow-xl">
+            <figure class="p-5">
+              <img class="w-full rounded-lg"
+                src="./images/product04.jpg"
+                alt="Shoes"
+                class="rounded-xl" />
+            </figure>
+            <div class=" items-center text-center space-y-2 pb-3">
+              <p class="text-lg text-gray-500">Groceries</p>
+              <h2 class="font-bold text-xl text-center">Assorted Coffee</h2>
+              <div>
+                <i class="fa-solid fa-star text-amber-500"></i>
+                <i class="fa-solid fa-star text-amber-500"></i>
+                <i class="fa-solid fa-star text-amber-500"></i>
+                <i class="fa-solid fa-star text-amber-500"></i>
+                <i class="fa-solid fa-star text-amber-500"></i>
+              </div>
+              <p class=" text-gray-600">$35.00</p>
+              <div class="card-actions flex justify-center">
+                <button class="bg-[#659407]  text-white py-3 font-semibold px-6 rounded-lg">
+                  Shop Now
+                  <i class="fa-solid fa-cart-shopping mr-2 text-white"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- card 5 -->
+          <div class="card border bg-base-100 w-full shadow-xl">
+            <figure class="p-5">
+              <img class="w-full rounded-lg"
+                src="./images/product05.jpg"
+                alt="Shoes"
+                class="rounded-xl" />
+            </figure>
+            <div class=" items-center text-center space-y-2 pb-3">
+              <p class="text-lg text-gray-500">Groceries</p>
+              <h2 class="font-bold text-xl text-center">Assorted Coffee</h2>
+              <div>
+                <i class="fa-solid fa-star text-amber-500"></i>
+                <i class="fa-solid fa-star text-amber-500"></i>
+                <i class="fa-solid fa-star text-amber-500"></i>
+                <i class="fa-solid fa-star text-amber-500"></i>
+                <i class="fa-solid fa-star text-amber-500"></i>
+              </div>
+              <p class=" text-gray-600">$35.00</p>
+              <div class="card-actions flex justify-center">
+                <button class="bg-[#659407]  text-white py-3 font-semibold px-6 rounded-lg">
+                  Shop Now
+                  <i class="fa-solid fa-cart-shopping mr-2 text-white"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- card 6 -->
+          <div class="card border bg-base-100 w-full shadow-xl">
+            <figure class="p-5">
+              <img class="w-full rounded-lg"
+                src="./images/product06.jpg"
+                alt="Shoes"
+                class="rounded-xl" />
+            </figure>
+            <div class=" items-center text-center space-y-2 pb-3">
+              <p class="text-lg text-gray-500">Groceries</p>
+              <h2 class="font-bold text-xl text-center">Assorted Coffee</h2>
+              <div>
+                <i class="fa-solid fa-star text-amber-500"></i>
+                <i class="fa-solid fa-star text-amber-500"></i>
+                <i class="fa-solid fa-star text-amber-500"></i>
+                <i class="fa-solid fa-star text-amber-500"></i>
+                <i class="fa-solid fa-star text-amber-500"></i>
+              </div>
+              <p class=" text-gray-600">$35.00</p>
+              <div class="card-actions flex justify-center">
+                <button class="bg-[#659407]  text-white py-3 font-semibold px-6 rounded-lg">
+                  Shop Now
+                  <i class="fa-solid fa-cart-shopping mr-2 text-white"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- card 7 -->
+          <div class="card border bg-base-100 w-full shadow-xl">
+            <figure class="p-5">
+              <img class="w-full rounded-lg"
+                src="./images/product07.jpg"
+                alt="Shoes"
+                class="rounded-xl" />
+            </figure>
+            <div class=" items-center text-center space-y-2 pb-3">
+              <p class="text-lg text-gray-500">Groceries</p>
+              <h2 class="font-bold text-xl text-center">Assorted Coffee</h2>
+              <div>
+                <i class="fa-solid fa-star text-amber-500"></i>
+                <i class="fa-solid fa-star text-amber-500"></i>
+                <i class="fa-solid fa-star text-amber-500"></i>
+                <i class="fa-solid fa-star text-amber-500"></i>
+                <i class="fa-solid fa-star text-amber-500"></i>
+              </div>
+              <p class=" text-gray-600">$35.00</p>
+              <div class="card-actions flex justify-center">
+                <button class="bg-[#659407]  text-white py-3 font-semibold px-6 rounded-lg">
+                  Shop Now
+                  <i class="fa-solid fa-cart-shopping mr-2 text-white"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- card 8 -->
+          <div class="card border bg-base-100 w-full shadow-xl">
+            <figure class="p-5">
+              <img class="w-full rounded-lg"
+                src="./images/product08.jpg"
+                alt="Shoes"
+                class="rounded-xl" />
+            </figure>
+            <div class=" items-center text-center space-y-2 pb-3">
+              <p class="text-lg text-gray-500">Groceries</p>
+              <h2 class="font-bold text-xl text-center">Assorted Coffee</h2>
+              <div>
+                <i class="fa-solid fa-star text-amber-500"></i>
+                <i class="fa-solid fa-star text-amber-500"></i>
+                <i class="fa-solid fa-star text-amber-500"></i>
+                <i class="fa-solid fa-star text-amber-500"></i>
+                <i class="fa-solid fa-star text-amber-500"></i>
+              </div>
+              <p class=" text-gray-600">$35.00</p>
+              <div class="card-actions flex justify-center">
+                <button class="bg-[#659407]  text-white py-3 font-semibold px-6 rounded-lg">
+                  Shop Now
+                  <i class="fa-solid fa-cart-shopping mr-2 text-white"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+         </div>
+      </section>
+  </main>
 </body>
 
 </html>
